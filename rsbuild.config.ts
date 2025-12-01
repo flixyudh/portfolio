@@ -4,4 +4,11 @@ import { pluginReact } from '@rsbuild/plugin-react';
 // Docs: https://rsbuild.rs/config/
 export default defineConfig({
   plugins: [pluginReact()],
+  html: {
+    title: 'Yudi Iswandi',
+    favicon: './public/favicon.ico',
+  },
+  performance: {
+    removeConsole: true,
+  },
 });
